@@ -1,41 +1,16 @@
 import 'package:flutter/material.dart';
+import 'pages/ConversationPageList.dart';
+void main() => runApp(Messsenger());
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class Messsenger extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Messenger',
+     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.yellow,
+        primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Messenger'),
+      home: ConversationPageList(),
     );
-  }
-}
-
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
-
-
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Text('hello')
-      )
-   );
   }
 }
