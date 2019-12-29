@@ -1,4 +1,3 @@
-
 language: dart
 dist: bionic
 addons:
